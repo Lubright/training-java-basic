@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ex5_File_ls",
+            "request": "launch",
+            "mainClass": "com.examples.ex5_File_ls",
+            "projectName": "Ch8_Exception_FileIO"
+        }
+    ]
+}

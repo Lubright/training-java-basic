@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ex2_HashMap1",
+            "request": "launch",
+            "mainClass": "ex2_HashMap1"
+        }
+    ]
+}
