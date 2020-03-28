@@ -1,4 +1,4 @@
-package examples.HF;
+package examples.Swing.HF;
 
 import java.awt.BorderLayout;
 import java.awt.Color;

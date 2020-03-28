@@ -13,7 +13,8 @@ public class ex1_GeneralDumpMethod {
 		ByteArrayOutputStream bos; // dest
 		
 		try {
-			inputData = "test111\ntest222".getBytes("UTF-8"); // String to byte[]
+//			inputData = "test111\ntest222".getBytes("UTF-8"); // String to byte[]
+			inputData = "test111".getBytes();
 			bos = new ByteArrayOutputStream();
 			
 			dumpToFile(new ByteArrayInputStream(inputData), bos); // byte[] to byteArrayInputStream
@@ -44,5 +45,5 @@ public class ex1_GeneralDumpMethod {
 		}
 		
 	}
-
+	
 }

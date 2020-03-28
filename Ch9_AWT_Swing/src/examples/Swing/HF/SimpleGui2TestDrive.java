@@ -1,13 +1,15 @@
-package examples.HF;
+package examples.Swing.HF;
 
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class SimpleGui1TestDrive {
+public class SimpleGui2TestDrive {
 	
-	static class SimpleGui1 extends JFrame{
+	static class SimpleGui1 extends JFrame implements ActionListener{
 		
 		private Container container;
 		private JButton btn;
@@ -23,6 +25,7 @@ public class SimpleGui1TestDrive {
 			
 			// initial component
 			btn = new JButton("clicke me");
+			btn.addActionListener(this);
 			
 			
 			// put components to container
@@ -34,6 +37,16 @@ public class SimpleGui1TestDrive {
 			
 			
 		}
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			JButton btn = (JButton) e.getSource();
+			
+			btn.setText("I've been clicked!");
+			
+		}
+		
+		
 		
 	}
 
