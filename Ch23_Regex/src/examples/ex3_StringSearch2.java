@@ -12,6 +12,7 @@ public class ex3_StringSearch2 {
 		
 		boolean found = false;
 		matcher.matches();
+		matcher.find();
 		System.out.println(matcher.group(0));
 		
 		

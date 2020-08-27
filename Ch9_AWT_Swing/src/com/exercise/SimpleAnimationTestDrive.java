@@ -69,6 +69,7 @@ public class SimpleAnimationTestDrive {
 				
 				g2d.fillRect(0, 0, this.getWidth(), this.getHeight()); // set background color, reset paint again
 				
+		
 				g2d.setColor(Color.orange);
 				g2d.fillOval(x, y, 20, 20);
 				

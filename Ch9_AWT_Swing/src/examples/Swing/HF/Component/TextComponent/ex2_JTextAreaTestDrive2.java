@@ -5,6 +5,8 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -23,6 +25,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.KeyStroke;
 import javax.swing.ScrollPaneConstants;
 
 public class ex2_JTextAreaTestDrive2 {
@@ -100,7 +103,8 @@ public class ex2_JTextAreaTestDrive2 {
 
 	        
 	        // create menuitems
-	        saveItem = new JMenuItem("Save As...");
+	        saveItem = new JMenuItem("Save As...", KeyEvent.VK_S);
+	        saveItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,ActionEvent.CTRL_MASK)); 
 	        aboutItem = new JMenuItem("About UIConsole");
 	        m3 = new JMenuItem("MenuItem3");
 

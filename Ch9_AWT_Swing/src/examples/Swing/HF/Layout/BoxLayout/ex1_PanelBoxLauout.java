@@ -2,6 +2,7 @@ package examples.Swing.HF.Layout.BoxLayout;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Container;
 
 import javax.swing.BoxLayout;
@@ -28,7 +29,7 @@ public class ex1_PanelBoxLauout {
 			panel.setBackground(Color.darkGray);
 			
 			// set boxLayout for panel
-			boxLayout = new BoxLayout(panel, BoxLayout.Y_AXIS); // vertical alignment
+			boxLayout = new BoxLayout(panel, BoxLayout.X_AXIS); // vertical alignment
 			panel.setLayout(boxLayout);
 			
 			btn1 = new JButton("shock me");
@@ -37,9 +38,13 @@ public class ex1_PanelBoxLauout {
 			panel.add(btn1);
 			panel.add(btn2);
 			panel.add(btn3);
-			
+//			panel.setAlignmentY(Component.CENTER_ALIGNMENT);
+			btn1.setAlignmentY(Component.CENTER_ALIGNMENT);
+//			btn2.setAlignmentY(Component.CENTER_ALIGNMENT);
+//			btn3.setAlignmentY(Component.CENTER_ALIGNMENT);
+//			btn2.setAlignmentY(Component.CENTER_ALIGNMENT);
 			// put components to container
-			this.add(BorderLayout.EAST, panel);
+			this.add(BorderLayout.CENTER, panel);
 			
 			
 		}

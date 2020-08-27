@@ -72,7 +72,7 @@ public class MiniMusicPlayer3TestDrive {
 				e.printStackTrace();
 			}
 			
-			
+			this.setVisible(true);
 			this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		} // end MiniMusicPlayer() constructor
@@ -84,7 +84,7 @@ public class MiniMusicPlayer3TestDrive {
 			this.setResizable(true);
 			this.setTitle(this.getClass().getName());
 			this.setState(JFrame.NORMAL);
-			this.setVisible(true);
+			
 			
 			// get content pane
 			container = this.getContentPane();
